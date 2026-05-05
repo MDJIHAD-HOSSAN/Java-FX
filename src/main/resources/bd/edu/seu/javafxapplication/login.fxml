@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.javafxapplication.LoginController">
+   <children>
+      <Label layoutX="252.0" layoutY="35.0" text="Login Form">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="103.0" text="Email : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameFeild" layoutX="125.0" layoutY="135.0" prefHeight="25.0" prefWidth="253.0" />
+      <Label layoutX="125.0" layoutY="200.0" text="Password : " />
+      <PasswordField fx:id="passwordField" layoutX="125.0" layoutY="229.0" prefHeight="25.0" prefWidth="253.0" />
+      <Button layoutX="252.0" layoutY="295.0" mnemonicParsing="false" onAction="#setLoginButtonAction" text="Login" />
+      <Label fx:id="passwordError" layoutX="125.0" layoutY="261.0" prefHeight="17.0" prefWidth="253.0" textFill="#eb0404" />
+      <Label fx:id="massage" layoutX="421.0" layoutY="69.0" prefHeight="17.0" prefWidth="172.0" textFill="#08e831" />
+      <Label layoutX="171.0" layoutY="351.0" text="Want to register?" />
+      <Label layoutX="287.0" layoutY="351.0" onMouseClicked="#setRegisterLabelClicked" text="Register" textFill="#0a6ce4" underline="true" />
+   </children>
+</AnchorPane>
